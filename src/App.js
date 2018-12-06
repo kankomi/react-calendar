@@ -1,28 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Calendar from './components/Calendar';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+// const calAddr =
+//   'https://calendar.google.com/calendar/ical/patrick.gross1987%40gmail.com/private-64f699622d95f3c667924cce2ce1aee5/basic.ics';
+
+const App = () => (
+  <div className="App">
+    <Calendar />
+  </div>
+);
 
 export default App;
